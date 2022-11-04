@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JLTC - Official Website - EnrollmentForm</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <meta content="Free HTML Templates" name="form">
+
+    <!--for Title img-->
+    <link rel="shortcut icon" type="image/icon" href="img/jltclogo.png">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('FABzIQbO1WpRVkv17')
+</script>
+    <style>
+        .containers{
+            position: relative;
+            max-width: 1300px;
+            border-radius: none;
+            margin: auto;
+
+        }
+        .containers form{
+            position: relative;
+            min-height: 550px;
+            width: 100%;
+            background-color: #9AB9F7;
+            border-radius: 30px;
+            padding: 40px;
+        }
+        .containers form .fields{
+            margin-left: 50px;
+        }
+        label{
+            font-size: 25px;
+            display: inline-block;
+            margin-top: 3px;
+            color: black;
+        }
+        .containers form input{
+            background-color: #f2f2f2;
+            margin-left: 3px;
+            margin-top: 3px;
+            border-radius: 4px;
+            width: 95%;
+            border: none;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        select{
+            background-color: #f2f2f2;
+            width: 95%;
+            border: none;
+            padding: 10px;
+        }
+        option{
+            background-color: #f2f2f2;
+        }
+        /* label[for="gender"]{
+            margin-right: 11.3%;
+        }
+        label[for="status"]{
+            margin-right: 6.6%;
+        }  */
+        h3{
+            font-size: 40px;
+            color: green;
+        }
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            
+        }
+        #button{
+            background-color: darkgreen;
+            border-radius: 30px;
+            width: 70%;
+            padding: 10px;
+        }
+        #button:hover{
+            background-color: blue;
+            transition: .5s;
+        }
+        .bnt{
+            background-color: darkred;
+            border-radius: 30px;
+            width: 50%;
+            padding: 10px;
+        }
+        .bnt:hover{
+            color: black;
+            background-color: rgb(243, 158, 0);
+            transition: .5s;
+        }
+        @media (max-width: 767px){
+            .input-field {
+                margin-right: 55px;
+                display: flex;
+                flex-direction: column;
+            }
+            .containers form input{
+            width: 100%;
+            }
+            select{
+            width: 100%;
+            }
+            .containers form{
+                padding: 10px;
+            }
+            
+        }
+
+</style>
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <a class="text-white" href="contact.html"><small><i class="fa fa-phone-alt mr-2"></i>0915 946 5431 / 0918 540 6400</small></a>
+                    <small class="px-3">|</small>
+                    <a class="text-white" href="contact.html"><small><i class="fa fa-envelope mr-2"></i>jltcgroup@yahoo.com</small></a>
+                </div>
+            </div>
+            <!--<div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="https://www.facebook.com/koreantrainingcenter/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="https://twitter.com/jltcgroup2010?lang=en">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="https://www.instagram.com/jltclopez/?hl=en">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3">JLTC</i></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+            
+                <center>
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                </div>
+                </center>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 90px;">
+        <div class="text-center py-5">
+            <h1 class="text-white display-3">Enrollment Form</h1>         
+        </div>
+    </div>
+    <div class="containers">
+        <form id="form">
+            <center><h1>Please fill all fields with correct information.</h1></center><br><br>
+            <div class="fields">
+                <div class="input-field">
+                    <u><h3>Your Contact</h3></u><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-field">
+                    <label for="language">Language:</label>
+                    <input type="text" id="language" name="language" placeholder="Enter your subject" required>
+                </div>
+                <div class="input-field">
+                    <label for="contact">Cont. Num.:</label>
+                    <input type="number" id="contact" name="contact" placeholder="Enter cont. num." required>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="input-field">
+                    <u><h3>Full Name</h3><br></u>
+                    <label for="last">Last Name:</label>
+                    <input type="text" id="last" name="last" placeholder="Enter last name" required>
+                </div>
+                <div class="input-field">
+                    <label for="first">First Name:</label>
+                    <input type="text" id="first" name="first" placeholder="Enter first name" required>
+                </div>
+                <div class="input-field">
+                    <label for="middle">M. I:</label>
+                    <input type="text" id="middle" name="middle" placeholder="Enter middle initial" required>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="input-field">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter full address" required>
+                    <label for="occu">Occupation:</label>
+                    <input type="text" id="occu" name="occu" placeholder="Enter occupation" required>
+                </div>
+                <div class="input-field">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age" placeholder="Enter your age" required>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="input-field">
+                    <label for="birthday">Birth Date:</label>
+                    <input type="date" id="birthday" name="birthday" placeholder="Birthdate" required>
+                </div>
+                <div class="input-field">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label for="citi">Citizenship:</label>
+                    <input type="text" id="citi" name="citi" placeholder="Enter language" required>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="input-field">
+                    <label for="height">Height:</label>
+                    <input type="text" id="height" name="height" placeholder="Enter centimeter" required>
+                </div>
+                <div class="input-field">
+                    <label for="weight">Weight:</label>
+                    <input type="text" id="weight" name="weight" placeholder="Enter kilogram" required>
+                </div>
+                <div class="input-field">
+                    <label for="status">Civil Status:</label>
+                    <select id="status" name="status">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="separated">Separated</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="input-field">
+                    <u><h3>Emergency Contact</h3></u><br>
+                    <label for="guardian">Guardian:</label>
+                    <input type="text" id="guardian" name="guardian" placeholder="Enter Name" required>
+                    <label for="work">Occupation:</label>
+                    <input type="text" id="work" name="work" placeholder="Enter Occupatiion" required>
+                </div>
+                <div class="input-field">
+                    <label for="mother">Mother's Name:</label>
+                    <input type="text" id="mother" name="mother" placeholder="Enter name" required>
+                    <label for="occup">Occupation:</label>
+                    <input type="text" id="occupi" name="occup" placeholder="Enter Occupation" required>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="input-field">
+                    <label for="father">Father's Name:</label>
+                    <input type="text" id="father" name="father" placeholder="Enter name" required>
+                    <label for="occup">Occupation:</label>
+                    <input type="text" id="occupy" name="occup" placeholder="Enter Occupation" required>
+                </div>
+            </div>
+            <div class="fields">
+                <div class="input-field">
+                    <label for="spoken">Lang. Speak:</label>
+                    <input type="text" id="spoken" name="spoken" placeholder="Enter language speaking" required>                   
+                </div>
+            </div>
+            <div class="fields">
+                <div class="input-field">
+                    <label for="person">Contact Person:</label>
+                    <input type="text" id="person" name="person" placeholder="Enter name" required>
+                    <label for="contact">Cont. Num.:</label>
+                    <input type="number" id="contacts" name="contacts" placeholder="Enter cont. num." required>
+                </div>
+                <div class="input-field">
+                    <label for="Address">Address:</label>
+                    <input type="text" id="Address" name="Address" placeholder="Enter name" required>
+                </div>
+            </div>
+    <br><br>
+            <center><button type="submit" id="button" value="Submit" class="btn btn-primary webkit-appearance" target="_blank">Submit</button><br><br>
+                <a href="enrollment.html" class="btn btn-primary bnt">Reset</a></center><br><br>
+        </form>
+       
+    </div>
+    <script>
+        const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_znb4ysu';
+   const templateID = 'template_n41zgyd';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Submit';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Submit';
+      alert(JSON.stringify(err));
+    });
+});
+    </script>
+    <!-- Header End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>JLTC</h1>
+                    </a>
+                    <p class=" text-white m-0">Our Language Center is a Tesda-Accredited Institution located at Unit 200 and Unit 505 TOPAZ Building 99-101 Kamias Road, Quezon City (ABOVE LOVE FAITH HOPE GIFT SHOP KAMIAS ROAD). Food establishments, dormitories and shopping centers are located here to be enjoyed by many students.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p><a class="text-white mr-4" href="KamiasLocation.html"><i class="fa fa-map-marker-alt mr-2"></i>UNIT 200, Topaz Building (in front of GR Bank), 99 Kamias Road</a></p>
+                    <p><a class="text-white" href="contact.html"><i class="fa fa-phone-alt mr-2"></i>0915 946 5431 / 0918 540 6400 </p>
+                    <p><i class="fa fa-envelope mr-2"></i>jltcgroup@yahoo.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white mr-4" href="https://www.facebook.com/koreantrainingcenter/"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-white mr-4" href="https://twitter.com/jltcgroup2010?lang=en"><i class="fab fa-2x fa-twitter"></i></a>
+                        <a class="text-white" href="https://www.instagram.com/jltclopez/?hl=en"><i class="fab fa-2x fa-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="https://www.facebook.com/johnharold0729" target="_blank">John Harold Mendeja</a>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com" target="_blank">HTML Codex</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
