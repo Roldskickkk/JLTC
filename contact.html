@@ -30,8 +30,8 @@
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script type="text/javascript">
-    emailjs.init('FABzIQbO1WpRVkv17')
-    </script>
+        emailjs.init('FABzIQbO1WpRVkv17')
+      </script>
     <style>
         .dropdown-menu{
             position: absolute;
@@ -178,24 +178,24 @@
                         <script>
                             const btn = document.getElementById('button');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+                            document.getElementById('form')
+                            .addEventListener('submit', function(event) {
+                            event.preventDefault();
 
-   btn.value = 'Sending...';
+                            btn.value = 'Sending...';
 
-   const serviceID = 'service_znb4ysu';
-   const templateID = 'template_lm0qakh';
+                            const serviceID = 'service_8a2unqe';
+                            const templateID = 'template_1lw345w';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Message';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Message';
-      alert(JSON.stringify(err));
-    });
-});
+                            emailjs.sendForm(serviceID, templateID, this)
+                                .then(() => {
+                                btn.value = 'Send Email';
+                                alert('Sent!');
+                                }, (err) => {
+                                btn.value = 'Send Email';
+                                alert(JSON.stringify(err));
+                                });
+                            });
                         </script>
                     </div>
                 </div>
