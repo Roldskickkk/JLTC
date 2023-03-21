@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>JLTC - Official Website - EnrollmentForm</title>
+    <title>JLTC</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -45,7 +45,7 @@
             position: relative;
             min-height: 550px;
             width: 100%;
-            background-color: #9AB9F7;
+            background-color: #E7ECEC;
             border-radius: 30px;
             padding: 40px;
         }
@@ -95,24 +95,28 @@
             
         }
         #button{
-            background-color: darkgreen;
+            background-color: skyblue;
             border-radius: 30px;
+            color: black;
+            border: none;
             width: 70%;
             padding: 10px;
         }
         #button:hover{
-            background-color: blue;
+            background-color: rgb(66, 66, 248);
             transition: .5s;
+            color: white;
         }
         .bnt{
             background-color: darkred;
             border-radius: 30px;
+            border: none;
             width: 50%;
             padding: 10px;
         }
         .bnt:hover{
             color: black;
-            background-color: rgb(243, 158, 0);
+            background-color: rgb(240, 122, 53);
             transition: .5s;
         }
         @media (max-width: 767px){
@@ -171,7 +175,7 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3">JLTC</i></h1>
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>JLTC</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -181,6 +185,9 @@
                 <center>
                 <div class="navbar-nav mx-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="whatsnew.html" class="nav-item nav-link">What's New</a>
+                    <a href="classes.html" class="nav-item nav-link">Classes</a>
+                    <a href="top.html" class="nav-item nav-link">ESP/JLPT/JFT</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                 </div>
@@ -200,6 +207,8 @@
     <div class="containers">
         <form id="form">
             <center><h1>Please fill all fields with correct information.</h1></center><br><br>
+            <center><h4>Please fill all fields with correct information <br>
+            Put N/A if not applicable</h4></center>
             <div class="fields">
                 <div class="input-field">
                     <u><h3>Your Contact</h3></u><br>
@@ -325,28 +334,28 @@
         </form>
        
     </div>
-    <script>
-        const btn = document.getElementById('button');
+                    <script>
+                        const btn = document.getElementById('button');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+                            document.getElementById('form')
+                            .addEventListener('submit', function(event) {
+                            event.preventDefault();
 
-   btn.value = 'Sending...';
+                            btn.value = 'Sending...';
 
-   const serviceID = 'service_znb4ysu';
-   const templateID = 'template_n41zgyd';
+                            const serviceID = 'service_znb4ysu';
+                            const templateID = 'template_n41zgyd';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Submit';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Submit';
-      alert(JSON.stringify(err));
-    });
-});
-    </script>
+                            emailjs.sendForm(serviceID, templateID, this)
+                                .then(() => {
+                                btn.value = 'Submit';
+                                alert('Sent!');
+                                }, (err) => {
+                                btn.value = 'Submit';
+                                alert(JSON.stringify(err));
+                                });
+                            });
+                    </script>
     <!-- Header End -->
 
     <!-- Footer Start -->
